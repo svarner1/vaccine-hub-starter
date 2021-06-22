@@ -1,0 +1,11 @@
+STEP 2:
+
+Create a barebones server
+ Add code to the server.js file to get a simple server running.
+ -- Create error classes inside the utils/errors.js file
+ -- Insert a 404 and generic error handler middlewares in the server.js file.
+ 
+Add routes and model outline
+ Head into routes/auth.js and outline two POST endpoints for login and register.
+ Open the models/user.js file and create a new User class. Add two static async methods for login and register.
+ Use comments to describe the algorithms you'll need to login and register users

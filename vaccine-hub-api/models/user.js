@@ -1,3 +1,5 @@
+//Import the db.js file into the User model file
+const db = require("../db")
 const { UnauthorizedError } = require("../utils/errors")
 
 class User {

@@ -1,14 +1,8 @@
-STEP 4:
-Create a .env file to store sensitive environment variables
- Add the following variables to it:
- PORT=3001
- DATABASE_USER=postgres
- DATABASE_PASS=postgres
- DATABASE_HOST=localhost
- DATABASE_PORT=5432
- DATABASE_NAME=vaccine_hub
-Create a config.js file at the root of the project.
- Extract all needed info from process.env into local variables
- Log your configuration to the terminal
- Export all the necessary config variables
-Import the PORT variable from config into server.js and use it when the app starts up.
+STEP 5:
+ Create a new file at the root of the project called db.js.
+ Initialize a new postgres client with the pg package and connect to postgres using any necessary config variables.
+ Connect to postgres and log a message to the terminal on success or failure.
+ Explore the connected db
+ Import the db.js file into the User model file
+ Import the User model file into the routes/auth.js file
+ Attach the auth routes to the server.js file
